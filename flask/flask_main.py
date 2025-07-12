@@ -1,12 +1,13 @@
 from flask import Flask, request
 from flask_cors import CORS
+from waitress import serve
 
 app = Flask(__name__)  #Flask app
 CORS(app)  #add CORS
 #app.config['DEBUG'] = True  #debug mode
 
-ProjectName = ""
-#ProjectName = "/MyWebAPI"
+#ProjectName = ""
+ProjectName = "/MyWebAPI"
 
 @app.route(ProjectName + "/", methods=['GET'])
 def Hello():
@@ -25,4 +26,4 @@ def ResponseData():
 
 if __name__ == "__main__":
   app.run(host="0.0.0.0", port=5000)
-  #serve(app, host="0.0.0.0", port=5000, threads=5)  #run waitress server
+  #serve(app, host="0.0.0.0", port=5000, threads=5)  #run waitress server  

@@ -15,8 +15,8 @@ app.add_middleware(
   allow_headers=["*"],
 )
 
-ProjectName = ""
-#ProjectName = "/MyWebAPI"
+#ProjectName = ""
+ProjectName = "/MyWebAPI"
 
 @app.get(ProjectName + "/", response_class=HTMLResponse)
 async def Hello():
