@@ -19,9 +19,10 @@ Download and install HttpPlatformHandler for python WebAPI deployment.
   cd X:\file_path  #change directory
   virtualenv python_env  #create virtual environment
 </pre>
-Change directory to the scripts folder of python virtual environment
+Change directory to the scripts folder of python virtual environment and activate to start the virtual environment. 
 <pre lang="bash">
   cd X:\file_path\python_env\Scripts
+  activate
 </pre>
 Packages for FastAPI
 <pre lang="bash">
