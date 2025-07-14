@@ -4,7 +4,14 @@ from fastapi.responses import HTMLResponse
 from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
 
-app = FastAPI()  #create FastAPI app
+#create FastAPI app
+app = FastAPI(
+  title="FastAPI Example",
+  description="""
+    This is my FastAPI application
+  """,
+  version="1.0"
+)
 
 # add CORS middleware
 app.add_middleware(
